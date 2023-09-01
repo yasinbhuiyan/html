@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tag -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+  
+  <!-- custom style -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- internal css -->
+  <style>
+  h1{
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+  button{
+    padding: 10px 20px;
+    background: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+  }
+  </style>
+  
+  <!-- title -->
+  <title>HTML JS</title>
+</head>
+<body>
+  <!-- js can change content -->
+  <h1 id="title">JavaScript will change this.</h1>
+  <button onclick="changetitle()" type="button">Change This</button>
+  
+  <!-- js can change style -->
+  <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores debitis corporis iste maxime distinctio ipsum culpa totam. Laborum doloribus cum laboriosam quisquam ratione. Inventore ea debitis libero porro quisquam quia.</p>
+  <button onclick="changePara()" type="button">Change It</button>
+  
+  
+  <!-- js script -->
+  <script>
+  
+  //js can change content
+  function changetitle() {
+    document.getElementById('title').innerHTML = 'Use JavaScript in HTML Page';
+  }
+  
+  //js can change style
+  function changePara() {
+    document.getElementById('para').style.color = '#707070';
+    document.getElementById('para').style.lineHeight = '25px';
+    document.getElementById('para').style.fontFamily = 'sans-serif';
+  }
+  </script>
+</body>
+</html>

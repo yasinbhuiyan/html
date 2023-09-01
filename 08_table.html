@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tag -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+  
+  <!-- custom style -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- internal css -->
+  <style>
+  table{
+    width: 100%;
+  }
+  caption{
+    padding: 30px 0 15px 0;
+  }
+  table, th, td{
+    border: 1px solid #000000;
+    border-collapse: collapse
+  }
+  th, td{
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .cell__padding th, .cell__padding td{
+    padding: 10px;
+  }
+  
+  .cell__Spacing, .cell__Spacing th, .cell__Spacing td{
+    border-collapse: separate;
+    border-spacing: 10px;
+    padding: 0;
+  }
+  
+  .row__background tr:nth-child(odd){
+    background: rgba(0, 150, 255, 0.15)
+  }
+  .col__background th:nth-child(even), .col__background td:nth-child(even){
+    background: rgba(0, 150, 255, 0.15)
+  }
+  .hr__divider, .hr__divider th, .hr__divider td{
+    border: none;
+    border-bottom: 1px solid #000000;
+  }
+  </style>
+  <!-- title -->
+  <title>HTML Table</title>
+</head>
+<body>
+  <!-- cell padding -->
+  <table class="cell__padding">
+    <caption>Cell Padding</caption>
+    <tr>
+      <th>DAY & NO.</th>
+      <th>SUN</th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  
+  <!-- cell spacing -->
+  <table class="cell__Spacing">
+    <caption>Cell Spacing</caption>
+    <tr>
+      <th>DAY & NO.</th>
+      <th>SUN</th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  
+  <!-- colspan -->
+  <table>
+    <caption>colspan</caption>
+    <tr>
+      <th>DAY & NO.</th>
+      <th>SUN</th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td colspan="3"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td colspan="3"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+  </table>
+  
+  <!-- rowspan -->
+  <table>
+    <caption>rowspan</caption>
+    <tr>
+      <th>DAY & NO.</th>
+      <th>SUN</th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td rowspan="2"></td>
+      <td></td>
+      <td rowspan="2"></td>
+      <td></td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td rowspan="2"></td>
+      <td></td>
+      <td rowspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  
+  <!-- row background -->
+  <table class="row__background">
+    <caption>row background</caption>
+    <tr>
+      <th>DAY & NO.</th>
+      <th>SUN</th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  
+  <!-- col background -->
+  <table class="col__background">
+    <caption>col background</caption>
+    <tr>
+      <th>DAY & NO.</th>
+      <th>SUN</th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  
+  <!-- row & col background-->
+  <table class="col__background row__background">
+    <caption>row & col background</caption>
+    <tr>
+      <th>DAY & NO.</th>
+      <th>SUN</th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  
+  <!-- Horizontal Dividers -->
+  <table class="hr__divider">
+    <caption>Horizontal Dividers</caption>
+    <tr>
+      <th>DAY & NO.</th>
+      <th>SUN</th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+    
+  <!-- hide col -->
+  <table>
+    <caption>Hide Col</caption>
+    <colgroup>
+      <col span="1" style="background: rgba(0, 150, 255, 0.3)">
+      <col span="2">
+      <col span="1" style="background: rgba(0, 150, 255, 0.3)">
+    </colgroup>
+    <tr>
+      <th>DAY & NO.</th>
+      <th>SUN</th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>
