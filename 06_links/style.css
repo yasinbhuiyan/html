@@ -1,0 +1,35 @@
+a{
+  display: block;
+  margin: 20px 0;
+}
+.link__a{
+  color: #02B4FF;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.link__a:hover{
+  color: #025DFF;
+  text-decoration: underline;
+}
+.link__a:active{
+  color: #FFA602;
+}
+.link__a:visited{
+  color: #FF029B;
+}
+.link__button,
+.link__button:visited{
+  background: #1E90FF;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px
+}
+  .link__button:hover,
+  .link__button:active{
+  background: #FFFFFF;
+  color: #1E90FF;
+  border: 1px double #1E90FF;
+}

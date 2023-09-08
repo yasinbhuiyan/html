@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tag -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+  
+  <!-- custom style -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- title -->
+  <title>HTML Form Input Attributes</title>
+</head>
+<body>
+  <form action="">
+    <!-- readonly -->
+    <label for="read">Read Only</label>
+    <input type="text" name="read" id="read" value="Readonly" readonly>
+    
+    <!-- disabled -->
+    <label for="disabled">Disabled</label>
+    <input type="text" name="disabled" id="disabled" value="Disabled" disabled>
+    
+    <!-- maxlength -->
+    <label for="maxlength">Maxlength</label>
+    <input type="text" name="maxlength" id="maxlength" maxlength="11">
+    
+    <!-- min and max -->
+    <label for="number">Min And Max</label>
+    <input type="number" name="number" id="number"min="1" max="10">
+    
+    <!-- multiple -->
+    <label for="multiple">Multiple</label>
+    <input type="file" name="multiple" id="multiple" multiple>
+    
+    <!-- placeholder -->
+    <label for="placeholder">Placeholder</label>
+    <input type="text" name="placeholder" id="placeholder" placeholder="placeholder">
+    
+    <!-- required -->
+    <label for="required">Required</label>
+    <input type="password" name="required" id="required" required>
+    
+    <!-- step -->
+    <label for="step">Step</label>
+    <input type="number" name="step" id="step" step="3">
+    
+    <!-- autofocus -->
+    <label for="autofocus">Autofocus</label>
+    <input type="text" name="autofocus" id="autofocus" autofocus>
+    
+    <!-- list -->
+    <label for="country">Your Country</label>
+    <input list="cntylist" type="text" id="country" name="country">
+    <datalist id="cntylist">
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="Canada">Canada</option>
+      <option value="England">England</option>
+      <option value="Scotland">Scotland</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="India">India</option>
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="Russia">Russia</option>
+    </datalist>
+    
+    
+  </form>
+</body>
+</html>

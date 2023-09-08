@@ -1,0 +1,17 @@
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+  margin-bottom: 15px;
+}
+.img__float{
+  float: left;
+  padding-right: 10px;
+}
+.background__img{
+  padding: 200px;
+  background: url('https://picsum.photos/800');
+  background-repeat: no-repeat;
+  background-size: cover; /* 100% 100% */
+  background-attachment: fixed;
+}

@@ -1,0 +1,19 @@
+.css__h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: #474747
+}
+.css__p{
+  font-family: courier, monospace;
+  font-size: 18px;
+  color: #3F3F3F
+}
+.border{
+  border: 2px solid #000000;
+}
+.padding{
+  padding: 20px 30px;
+}
+.margin{
+  margin: 20px 30px;
+}
