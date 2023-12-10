@@ -5,7 +5,7 @@ caption{
   padding: 30px 0 15px 0;
 }
 table, th, td{
-  border: 1px solid #000000;
+  border: 1px solid #fff;
   border-collapse: collapse
 }
 th, td{
@@ -24,12 +24,12 @@ th, td{
 }
   
 .row__background tr:nth-child(odd){
-  background: rgba(0, 150, 255, 0.15)
+  background: rgba(5, 152, 255, 0.53)
 }
 .col__background th:nth-child(even), .col__background td:nth-child(even){
-  background: rgba(0, 150, 255, 0.15)
+  background: rgba(5, 152, 255, 0.53)
 }
 .hr__divider, .hr__divider th, .hr__divider td{
   border: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #fff;
 }

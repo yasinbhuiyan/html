@@ -1,25 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-h1{
-  color: #353535;
-  font-size: 25px;
-  padding: 20px 15px; 
-}
-p{
-  color: #6D6D6D;
-  padding: 5px 15px;
-  line-height: 25px;
-}
-ol{
-  padding: 20px 0 30px 40px;
-}
-a{
-  display: block;
-  color: #6A77FF;
-  text-decoration: none;
-  line-height: 35px;
-  padding: 0 5px;
+body{
+  background: #000000;
+  color: #A0A0A0
 }

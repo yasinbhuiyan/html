@@ -1,15 +1,15 @@
 .css__h1{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
-  color: #474747
+  color: #A8A8A8
 }
 .css__p{
   font-family: courier, monospace;
   font-size: 18px;
-  color: #3F3F3F
+  color: #C9C9C9
 }
 .border{
-  border: 2px solid #000000;
+  border: 2px solid #fff;
 }
 .padding{
   padding: 20px 30px;
