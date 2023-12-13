@@ -28,6 +28,8 @@ li{
 li:hover{
   color: #fff;
   margin-left: 25px;
+  background: #6A77FF;
+
 }
 li a{
   display: block;
