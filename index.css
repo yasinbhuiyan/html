@@ -1,15 +1,17 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
-h1{
-  color: #C8C8C8;
+h1 a{
+  color: #fff;
   font-size: 25px;
   padding: 25px; 
-  background: #6A77FF;
+  background: var(--clr);
   font-weight: normal;
   font-size: 20px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 p{
   color: #A0A0A0;
@@ -24,13 +26,13 @@ ol{
 li{
   text-transform: uppercase;
   padding-left: 5px;
-  color: #6A77FF;
+  color: var(--clr);
+  transition: .2s all linear;
 }
 li:hover{
   color: #fff;
   margin-left: 25px;
-  background: #6A77FF;
-
+  background: var(--clr);
 }
 li a{
   display: block;
@@ -39,16 +41,18 @@ li a{
   padding-left: 8px;
   line-height: 40px;
   font-size: 16px;
+  transition: .2s all linear;
+
 }
 li a:hover{
-  background: #6A77FF;
+  background: var(--clr);
   margin-left: -45px;
   padding-left: 45px;
 }
 .css_link{
   font-size: 16px;
   padding: 25px;
-  background: #6A77FF;
+  background: var(--clr);
   display: block;
   color: #FFFFFF;
   text-decoration: none;

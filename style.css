@@ -1,4 +1,11 @@
+*{
+  font-family: sans-serif;
+
+}
 body{
   background: #000000;
-  color: #A0A0A0
+  color: #A0A0A0;
+}
+:root{
+  --clr: #00DD00;
 }
