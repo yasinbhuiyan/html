@@ -14,7 +14,7 @@ div {
 }
 h1 {
   text-align: center;
-  color: #3f3f3f;
+  color: #A8A8A8;
 }
 input[type="text"],
 input[type="tel"],
@@ -36,12 +36,19 @@ textarea {
 button {
   padding: 10px 20px;
   border: none;
-  color: #ffffff;
+  color: #000000;
   border-radius: 5px;
-  background: #000000;
+  background: #A0A0A0;
 }
 fieldset,
 legend {
   margin: 15px 0;
   padding: 10px 15px;
+}
+input, select, textarea{
+  background: #3C3C3C;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #A0A0A0;
 }

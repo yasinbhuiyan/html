@@ -14,7 +14,7 @@ h1 a{
   text-transform: uppercase;
 }
 p{
-  color: #A0A0A0;
+  color: #6A966A;
   padding: 20px 0 0 25px;
   line-height: 25px;
 }
@@ -57,5 +57,9 @@ li a:hover{
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center
+  text-align: center;
+  transition: .2s all linear;
+}
+.css_link:hover{
+  transform: scale(1.2)
 }

@@ -13,4 +13,11 @@ input {
   width: 100%;
   padding: 10px 15px;
   margin: 5px 0;
+  background: #3C3C3C;
+  color: #A0A0A0;
+  border: none;
+  outline: none;
+}
+input:hover{
+ background: #2F2F2F; 
 }

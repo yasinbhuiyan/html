@@ -46,11 +46,6 @@ body {
   line-height: 25px;
   color: #717171;
 }
-.section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .footer {
   padding: 25px;
   color: #ffffff;
