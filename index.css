@@ -22,17 +22,25 @@ ol{
   padding: 15px 0 15px 50px;
   list-style: outside decimal-leading-zero;
   /* list-style-type: decimal-leading-zero; */
+
 }
 li{
   text-transform: uppercase;
   padding-left: 5px;
   color: var(--clr);
   transition: .2s all linear;
+  animation: li .5s ease-in;
+}
+@keyframes li{
+  0%{
+    transform: translateX(-50px)
+  }
+  100%{
+    transform: translateX(0)
+  }
 }
 li:hover{
-  color: #fff;
   margin-left: 25px;
-  background: var(--clr);
 }
 li a{
   display: block;
@@ -42,12 +50,22 @@ li a{
   line-height: 40px;
   font-size: 16px;
   transition: .2s all linear;
-
+  transform: translateX(0);
+  animation: ol .5s ease-in;
 }
 li a:hover{
   background: var(--clr);
   margin-left: -45px;
   padding-left: 45px;
+  color: #FFFFFF;
+}
+@keyframes ol{
+  0%{
+    transform: translateX(150px)
+  }
+  100%{
+    transform: translateX(0)
+  }
 }
 .css_link{
   font-size: 16px;
@@ -62,4 +80,11 @@ li a:hover{
 }
 .css_link:hover{
   transform: scale(1.2)
+}
+.advance{
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: #6A966A;
+  font-size: 14px;
+  display: block;
 }
