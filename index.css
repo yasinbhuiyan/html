@@ -88,3 +88,9 @@ li a:hover{
   font-size: 14px;
   display: block;
 }
+.point{
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: #6A966A;
+  font-size: 12px;
+}
